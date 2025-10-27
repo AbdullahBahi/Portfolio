@@ -450,14 +450,6 @@ a.icon {
    Portfolio Section Styles
    ======================================= */
 
-/* --- Power BI Responsive Wrapper --- */
-.powerbi-container {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; /* Adds smooth scrolling on iOS */
-  border: 1px solid #ddd; /* Optional: adds a subtle border */
-}
-
 /* --- 1. Filter Button Styling --- */
 section#portfolio .filter-wrapper {
   margin-top: 30px;
