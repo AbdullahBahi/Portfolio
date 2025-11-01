@@ -39,6 +39,55 @@ http://www.tooplate.com/view/2082-pure-mix
    ================================================== -->	
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
 	
+  <style>
+   /* Tab styling */
+   .project-tabs {
+      margin-top: 30px;
+   }
+   .project-tabs .nav-tabs {
+      margin-bottom: 25px;
+      border-bottom: 2px solid #f0f0f0;
+   }
+   .project-tabs .nav-tabs > li {
+      margin-bottom: -2px; /* Aligns with the border */
+   }
+   .project-tabs .nav-tabs > li > a {
+      border-radius: 4px 4px 0 0;
+      border-color: #eee;
+      color: #555;
+      font-weight: 600;
+   }
+   .project-tabs .nav-tabs > li.active > a,
+   .project-tabs .nav-tabs > li.active > a:hover,
+   .project-tabs .nav-tabs > li.active > a:focus {
+      color: #000;
+      border-bottom-color: transparent;
+      border-width: 1px 1px 2px 1px;
+      border-color: #eee #eee #fff;
+   }
+
+   /* Responsive adjustments for tabs on small screens */
+   @media (max-width: 767px) {
+      .project-tabs .nav-tabs > li {
+            float: none; /* Stack tabs vertically */
+            width: 100%;
+            margin-bottom: 5px;
+      }
+      .project-tabs .nav-tabs > li > a {
+            margin-right: 0;
+      }
+      .project-tabs .nav-tabs > li.active > a,
+      .project-tabs .nav-tabs > li.active > a:hover,
+      .project-tabs .nav-tabs > li.active > a:focus {
+            border-width: 1px; /* Reset border */
+      }
+      
+      /* Add space between sidebar and content when stacked */
+      #single-project .col-sm-4 {
+            margin-bottom: 30px;
+      }
+   }
+  </style>
 </head>
 <body>
 
@@ -117,95 +166,115 @@ http://www.tooplate.com/view/2082-pure-mix
 ================================================== -->
 <section id="portfolio">
    <div class="container">
-      <div class="row">
+      <div class="col-md-12 col-sm-12">
+         <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
+            <div class="project-tabs">
+               <ul class="nav nav-tabs" role="tablist">
+                     <li role="presentation" class="active"><a href="#dash1" aria-controls="dash1" role="tab" data-toggle="tab">Portfolio Management Projects</a></li>
+                     <li role="presentation"><a href="#dash2" aria-controls="dash2" role="tab" data-toggle="tab">Algorithmic Trading Projects</a></li>
+               </ul>
 
-         <div class="col-md-12 col-sm-12">
-            
-               <!-- iso section -->
-               <div class="iso-section wow fadeInUp" data-wow-delay="2.6s">
-
-                  <ul class="filter-wrapper clearfix">
-                           <li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
-                           <li><a href="#" class="opc-main-bg" data-filter=".ta">Technical Analysis Strategies</a></li>
-                           <li><a href="#" class="opc-main-bg" data-filter=".dl">Deep Learning Strategies</a></li>
-                           <li><a href="#" class="opc-main-bg" data-filter=".fi">Factor Investing</a></li>
-                        </ul>
-
-                        <!-- iso box section -->
-                        <div class="iso-box-section wow fadeInUp" data-wow-delay="1s">
-                           <div class="iso-box-wrapper col4-iso-box">
-                              <div class="iso-box ta col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <div class="portfolio-overlay">
-                                       <div class="portfolio-item">
-                                          <a href="alpha-v1.html">
-                                             <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
-                                             <h2>Alpha-V1</h2>
-                                          </a>
-                                       </div>
-                                    </div>
+               <div class="tab-content">
+                  <div role="tabpanel" class="tab-pane active fade in dashboard-section" id="dash1">
+                     <div class="row">
+                        <div class="iso-box piw col-md-4 col-sm-6">
+                           <div class="portfolio-thumb">
+                              <div class="portfolio-overlay">
+                                 <div class="portfolio-item">
+                                    <a href="my-portfolio.html">
+                                       <img src="images/portfolio-img8.jpg" class="img-responsive" alt="Portfolio">
+                                       <h2>Personal Investment Wallet</h2>
+                                    </a>
                                  </div>
                               </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
 
-                              <div class="iso-box dl col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <div class="portfolio-overlay">
-                                       <div class="portfolio-item">
-                                          <a href="alpha-v2.html">
-                                             <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
-                                             <h2>Alpha-V2</h2>
-                                          </a>
-                                       </div>
-                                    </div>
+                  <div role="tabpanel" class="tab-pane fade dashboard-section" id="dash2">
+                     <h6 class="wow fadeInUp" data-wow-delay="1.0s">Technical Analysis Strategies</h6>
+                     <div class="row">
+                        <div class="iso-box ta col-md-4 col-sm-6">
+                           <div class="portfolio-thumb">
+                              <div class="portfolio-overlay">
+                                 <div class="portfolio-item">
+                                    <a href="alpha-v1.html">
+                                       <img src="images/portfolio-img1.jpg" class="img-responsive" alt="Portfolio">
+                                       <h2>Alpha-V1</h2>
+                                    </a>
                                  </div>
                               </div>
+                           </div>
+                        </div>
+                     </div>
+                     <br>
 
-                              <div class="iso-box dl col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <div class="portfolio-overlay">
-                                       <div class="portfolio-item">
-                                          <a href="alpha-v3.html">
-                                             <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
-                                             <h2>Alpha-V3</h2>
-                                          </a>  
-                                       </div>
-                                    </div>
+                     <h6 class="wow fadeInUp" data-wow-delay="1.0s">Deep Learning Strategies</h6>
+                     
+                     <div class="row">
+                        <div class="iso-box dl col-md-4 col-sm-6">
+                           <div class="portfolio-thumb">
+                              <div class="portfolio-overlay">
+                                 <div class="portfolio-item">
+                                    <a href="alpha-v2.html">
+                                       <img src="images/portfolio-img2.jpg" class="img-responsive" alt="Portfolio">
+                                       <h2>Alpha-V2</h2>
+                                    </a>
                                  </div>
                               </div>
-
-                              <div class="iso-box fi col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <div class="portfolio-overlay">
-                                       <div class="portfolio-item">
-                                          <a href="long-short-classical.html">
-                                             <img src="images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
-                                             <h2>Long-Short Classical Factors</h2>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-
-                              <div class="iso-box fi col-md-4 col-sm-6">
-                                 <div class="portfolio-thumb">
-                                    <div class="portfolio-overlay">
-                                       <div class="portfolio-item">
-                                          <a href="long-short-pca.html">
-                                             <img src="images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
-                                             <h2>Long-Short Latent Factors</h2>
-                                          </a>  
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-
-                            </div>
+                           </div>
                         </div>
 
+                        <div class="iso-box dl col-md-4 col-sm-6">
+                           <div class="portfolio-thumb">
+                              <div class="portfolio-overlay">
+                                 <div class="portfolio-item">
+                                    <a href="alpha-v3.html">
+                                       <img src="images/portfolio-img3.jpg" class="img-responsive" alt="Portfolio">
+                                       <h2>Alpha-V3</h2>
+                                    </a>  
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <br>
+
+                     <h6 class="wow fadeInUp" data-wow-delay="1.0s">Factor Investing</h6>
+
+                     <div class="row">
+                        <div class="iso-box fi col-md-4 col-sm-6">
+                           <div class="portfolio-thumb">
+                              <div class="portfolio-overlay">
+                                 <div class="portfolio-item">
+                                    <a href="long-short-classical.html">
+                                       <img src="images/portfolio-img4.jpg" class="img-responsive" alt="Portfolio">
+                                       <h2>Long-Short Classical Factors</h2>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="iso-box fi col-md-4 col-sm-6">
+                           <div class="portfolio-thumb">
+                              <div class="portfolio-overlay">
+                                 <div class="portfolio-item">
+                                    <a href="long-short-pca.html">
+                                       <img src="images/portfolio-img5.jpg" class="img-responsive" alt="Portfolio">
+                                       <h2>Long-Short Latent Factors</h2>
+                                    </a>  
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-
+            </div>
          </div>
-
       </div>
    </div>
 </section>
